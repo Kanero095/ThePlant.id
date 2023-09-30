@@ -85,7 +85,7 @@
         </button>
         <div class="faq-body">
             <h4>
-                FREQUENTLY ASKED QUESTIONS (FAQ)
+                FREQUENTLY ASKED QUESTIONS (FAQ) !
             </h4>
             <p>
                 Jika anda punya pertanyaan silahkan
