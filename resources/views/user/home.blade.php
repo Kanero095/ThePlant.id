@@ -54,6 +54,11 @@
                     </i>
                 </a>
             </li>
+            {{-- <li>
+                <a href="/commerce">
+                    <i>Plant Commerce</i>
+                </a>
+            </li> --}}
             <li>
                 <a class="text-white" href="#about"> {{-- link about --}}
                     <i class="bi bi-bicycle mr-2">

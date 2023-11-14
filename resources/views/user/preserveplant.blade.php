@@ -182,7 +182,7 @@
                             Deskripsi Lengkap Tanaman*
                         </th>
                         <th>
-                            <textarea name="deletam" id="deletam" cols="80" rows="10" class="form-control"
+                            <textarea class="ckeditor form-control" name="deletam" id="deletam" cols="80" rows="10"
                                 placeholder="Masukkan deskripsi lengkap mengenai tanaman yang ingin anda bagikan di sini" autofocus required></textarea>
                         </th>
                     </tr>
@@ -207,6 +207,15 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="{{ asset('javascript/java.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#deletam'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+
 </body>
 
 </html>
