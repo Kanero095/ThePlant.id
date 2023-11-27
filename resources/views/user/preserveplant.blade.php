@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="icon" type="image/png" href="image/logo/TP-2.png">
     <title>The Plant : Preserve Plant</title>
+    <style>
+        .ck-editor__editable_inline {
+            min-height: 400px;
+        }
+    </style>
 </head>
 
 <body>
@@ -80,7 +85,7 @@
     </div>
 
     {{-- content --}}
-    <section class="p-4" id="main-content">
+    <section class="p-4 sec" id="main-content">
         <button class="btn btn-success" id="button-toggle">
             <i class="bi bi-list"> Menu </i>
         </button>
@@ -93,6 +98,8 @@
                         Preserve Plants With Us
                     </h1>
                     <tr>
+                        <input type="text" name="color" id="color" value="red" hidden>
+                        <input type="text" name="verif" id="verif" value="Belum Terverifikasi" hidden>
                         <th>
                             Nama Anda*
                         </th>
@@ -125,7 +132,7 @@
                         </th>
                         <td>
                             <input type="text" name="nata" id="nata" class="form-control"
-                                placeholder="Masukkan Nama Tanaman yang akan dibagi" autofocus required>
+                                placeholder="Masukkan Nama Tanaman yang akan dibagi" maxlength="25" autofocus required>
                         </td>
                     </tr>
                     <tr>
@@ -133,7 +140,7 @@
                             Nama Latin Tanaman
                         </th>
                         <td>
-                            <input type="text" name="lata" id="lata" class="form-control"
+                            <input type="text" name="lata" id="lata" class="form-control" maxlength="50"
                                 placeholder="Masukkan Nama Latin Tanaman yang akan dibagi">
                         </td>
                     </tr>
@@ -164,7 +171,8 @@
                             Klasifikasi Tanaman
                         </th>
                         <td>
-                            <input type="text" name="klatam" id="klatam" class="form-control" autocomplete="off"
+                            <input type="text" name="klatam" id="klatam" class="form-control"
+                                autocomplete="off"
                                 placeholder="Contoh : Obat, Hias, Beracun, atau sebagainya (bisa lebih dari satu)">
                         </td>
                     </tr>
@@ -182,8 +190,9 @@
                             Deskripsi Lengkap Tanaman*
                         </th>
                         <th>
-                            <textarea class="ckeditor form-control" name="deletam" id="deletam" cols="80" rows="10"
-                                placeholder="Masukkan deskripsi lengkap mengenai tanaman yang ingin anda bagikan di sini" autofocus required></textarea>
+                            <textarea class="ckeditor form-control ck-editor__editable_inline" name="deletam" id="deletam" cols="80"
+                                rows="10" placeholder="Masukkan deskripsi lengkap mengenai tanaman yang ingin anda bagikan di sini">
+                            </textarea>
                         </th>
                     </tr>
                     <tr>

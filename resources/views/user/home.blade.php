@@ -83,7 +83,7 @@
             </li>
         </div>
     </div>
-    <section class="p-4" id="main-content">
+    <section class="p-4 sec" id="main-content">
         <button class="btn btn-success" id="button-toggle">
             <i class="bi bi-list"> Menu </i>
         </button>

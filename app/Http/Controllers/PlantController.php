@@ -46,6 +46,8 @@ class PlantController extends Controller
         $plant = plant::create(
             [
                 'id' => $request->id,
+                'verif' => $request->verif,
+                'verifer' => $request->verifer,
                 'nator' => $request->nator,
                 'email' => $request->email,
                 'nowa' => $request->nowa,

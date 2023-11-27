@@ -30,6 +30,10 @@ Route::get('/preserveplant', function () {
     return view('user.preserveplant');
 });
 
+Route::get('/plant-commerce', function () {
+    return view('user.commerce');
+});
+
 Route::get('/about', function () {
     return view('user.about_Cont');
 });

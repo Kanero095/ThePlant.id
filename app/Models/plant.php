@@ -28,6 +28,8 @@ class plant extends Model
         'deletam',
         'desitam',
         'litam',
-        'color'
+        'color',
+        'verif',
+        'verifer'
     ];
 }

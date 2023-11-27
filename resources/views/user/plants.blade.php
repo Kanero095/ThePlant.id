@@ -90,7 +90,7 @@
                     </a>
                     {{-- Filter Kategori --}}
                     <select name="filkatam" id="katam" class="form-control" required>
-                        <option value="">Kategori* ↓</option>
+                        <option value="">Kategori*</option>
                         <option value="Tidak DiLindungi">Tidak Dilindungi</option>
                         <option value="Dilindungi">Dilindungi</option>
                         <option value="Punah">Punah</option>
@@ -112,7 +112,15 @@
                     <div class="caption">
                         <p class="nata">
                             {{ $plant->nata }} (<i>{{ $plant->lata }}</i>)
+                            <br>
+
+                            <span
+                                style="color: {{ $plant->color }}; font-size:12px; text-align:center;text-shadow:0 0 2px rgb(226, 225, 225);"
+                                title="{{ $plant->verifer }}">
+                                {{ $plant->verif }}
+                            </span>
                         </p>
+                        <br>
                         <p class="klatam deks_klatam">
                             Merupakan Tanaman <i>{{ $plant->klatam }}</i>,
                             dan juga termasuk dalam kategori tanaman <i>{{ $plant->katam }}</i>.......

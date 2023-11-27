@@ -79,18 +79,18 @@
         </div>
     </div>
     {{-- content --}}
-    <section class="p-4 sec" id="main-content">
+    <section class="p-4" id="main-content">
         <button class="btn btn-success" id="button-toggle">
             <i class="bi bi-list"> Menu </i>
         </button>
         <div class="paper">
             <a href="/plant" class="back btn btn-dark">
-                ← Back
+                Back
             </a>
             <div class="hero_img">
-                <img src="{{ asset('storage/' . $data->gamta) }}" alt="{{ $data->nata }}">
+                <img src="{{ asset('storage/' . $data->gamta) }}" alt="{{ $data->nata }}" title="{{ $data->nata }}">
                 <p class="nator">
-                    <i>
+                    <i style="margin-bottom: 40px;">
                         By {{ $data->nator }}
                     </i>
                 </p>
@@ -98,8 +98,21 @@
             <h2 class="judul">
                 {{ $data->nata }} ({{ $data->lata }})
             </h2>
+
+            <p style="color: {{ $data->color }}; font-size:12px; text-align:center;text-shadow:0 0 2px rgb(226, 225, 225);"
+                title="{{ $data->verifer }}">{{ $data->verif }}</p>
+
+            <div class="ket">
+                <p>
+                    Klasifikasi Tanaman : {{ $data->katam }}
+
+                    <br>
+
+                    Kategori Tanaman : {{ $data->klatam }}
+                </p>
+            </div>
             <p class="desk">
-                {{ $data->deletam }}
+                {!! $data->deletam !!}
             </p>
         </div>
     </section>

@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('color')->nullable();
+            $table->string('verif')->nullable();
+            $table->string('verifer')->nullable();
             $table->string('nator');
             $table->string('email');
             $table->string('nowa');
