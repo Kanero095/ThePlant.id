@@ -28,7 +28,7 @@
                         <img src="{{ asset('image/logo/TP-2.png') }}" alt="ThePlant" height="100px" width="auto"
                             class="d-flex align-items-center">
                         <p>
-                            THE PLANT
+                            THE PLANTS
                         </p>
                     </a>
                 </div>
@@ -103,13 +103,24 @@
                 title="{{ $data->verifer }}">{{ $data->verif }}</p>
 
             <div class="ket">
-                <p>
-                    Klasifikasi Tanaman : {{ $data->katam }}
-
-                    <br>
-
-                    Kategori Tanaman : {{ $data->klatam }}
-                </p>
+                <table>
+                    <tr>
+                        <td>
+                            Klasifikasi Tanaman
+                        </td>
+                        <td>
+                            : {{ $data->katam }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Kategori Tanaman
+                        </td>
+                        <td>
+                            : {{ $data->klatam }}
+                        </td>
+                    </tr>
+                </table>
             </div>
             <p class="desk">
                 {!! $data->deletam !!}

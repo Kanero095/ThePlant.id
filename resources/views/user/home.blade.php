@@ -15,26 +15,27 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="icon" type="image/png" href="image/logo/TP-2.png">
-    <title>The Plant : Home</title>
+    <title>The Plants : Home</title>
 </head>
 
 <body>
     {{-- navbar side --}}
     <div>
-        <div class="sidebar p-4" id="sidebar">
+        <div class="sidebar p-4 nb_side" id="sidebar">
             <li>
                 <div class="d-flex justify-content-center">
                     <a class="text-white" href="home"> {{-- Link logo --}}
                         <img src="image/logo/TP-2.png" alt="ThePlant" height="100px" width="auto"
                             class="d-flex align-items-center">
                         <p>
-                            THE PLANT
+                            THE PLANTS
                         </p>
                     </a>
                 </div>
             </li>
             <li>
-                <a class="text-white" href="/home"> {{-- link dashboard --}}
+                <a class="text-white" href="/home" style="border-bottom:2px solid #1900ff; text-shadow: 0 0 3px #000">
+                    {{-- link dashboard --}}
                     <i class="bi bi-house mr-2">
                         Home
                     </i>
@@ -93,11 +94,11 @@
             <div class="A" id="about">
                 <h1>
                     <u>
-                        THE PLANT
+                        THE PLANTS
                     </u>
                 </h1>
                 <p>
-                    The Plant merupakan sebuah platform yang memberikan informasi dan edukasi mengenai tanaman-tanaman
+                    The Plants merupakan sebuah platform yang memberikan informasi dan edukasi mengenai tanaman-tanaman
                     yang ada di indonesia, bahkan termasuk tanaman langkah yang tidak banyak diketahui oleh masyarakat
                     Indonesia. Tanaman yang ditampilkan telah dikelompokkan berdasarkan klasifikasi dan berdasarkan
                     kategori.

@@ -20,14 +20,14 @@
 <body>
     {{-- navbar side --}}
     <div>
-        <div class="sidebar p-4" id="sidebar">
+        <div class="sidebar p-4 nb_side" id="sidebar">
             <li>
                 <div class="d-flex justify-content-center">
                     <a class="text-white" href="/home"> {{-- Link logo --}}
                         <img src="image/logo/TP-2.png" alt="ThePlant" height="100px" width="auto"
                             class="d-flex align-items-center">
                         <p>
-                            THE PLANT
+                            THE PLANTS
                         </p>
                     </a>
                 </div>
@@ -40,7 +40,8 @@
                 </a>
             </li>
             <li>
-                <a class="text-white" href="/plant"> {{-- link plant bagian edukasi --}}
+                <a class="text-white" href="/plant" style="border-bottom:2px solid #1900ff; text-shadow: 0 0 3px #000">
+                    {{-- link plant bagian edukasi --}}
                     <i class="bi bi-fire mr-2">
                         Plant
                     </i>
@@ -82,7 +83,7 @@
         <button class="btn btn-success" id="button-toggle">
             <i class="bi bi-list"> Menu </i>
         </button>
-        <li class="cari widget_search">
+        <li class="cari widget_search" style="list-style:none;">
             <a class="text-white" href="#">
                 <form action="/plant" method="GET" class="d-flex" role="search">
                     <a href="{{ route('plant.index') }}" class="btn clear-filter">

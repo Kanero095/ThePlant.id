@@ -26,14 +26,14 @@
 <body>
     {{-- navbar side --}}
     <div>
-        <div class="sidebar p-4" id="sidebar">
+        <div class="sidebar p-4 nb_side" id="sidebar">
             <li>
                 <div class="d-flex justify-content-center">
                     <a class="text-white" href="/home"> {{-- Link logo --}}
                         <img src="image/logo/TP-2.png" alt="ThePlant" height="100px" width="auto"
                             class="d-flex align-items-center">
                         <p>
-                            THE PLANT
+                            THE PLANTS
                         </p>
                     </a>
                 </div>
@@ -53,7 +53,8 @@
                 </a>
             </li>
             <li>
-                <a class="text-white" href="/preserveplant"> {{-- link untuk nerima ide orang lain --}}
+                <a class="text-white" href="/preserveplant"
+                    style="border-bottom:2px solid #1900ff; text-shadow: 0 0 3px #000"> {{-- link untuk nerima ide orang lain --}}
                     <i class="bi bi-newspaper mr-2">
                         Preserve Plants
                     </i>

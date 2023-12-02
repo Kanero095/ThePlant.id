@@ -21,14 +21,14 @@
 <body>
     {{-- navbar side --}}
     <div>
-        <div class="sidebar p-4" id="sidebar">
+        <div class="sidebar p-4 nb_side" id="sidebar">
             <li>
                 <div class="d-flex justify-content-center">
                     <a class="text-white" href="/home"> {{-- Link logo --}}
                         <img src="image/logo/TP-2.png" alt="ThePlant" height="100px" width="auto"
                             class="d-flex align-items-center">
                         <p>
-                            THE PLANT
+                            THE PLANTS
                         </p>
                     </a>
                 </div>
@@ -55,7 +55,8 @@
                 </a>
             </li>
             <li>
-                <a class="text-white" href="#about"> {{-- link about --}}
+                <a class="text-white" href="#about" style="border-bottom:2px solid #1900ff; text-shadow: 0 0 3px #000">
+                    {{-- link about --}}
                     <i class="bi bi-bicycle mr-2">
                         About
                     </i>
@@ -88,7 +89,7 @@
             <div class="about2" id="about">
                 <h1>
                     <u>
-                        THE PLANT
+                        THE PLANTS
                     </u>
                 </h1>
                 <p>
